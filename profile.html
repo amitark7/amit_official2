@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            /* margin: 12px; */
+            text-align: left;
+            /* border: 2px solid black; */
+        }
+
+        header p {
+            font-size: 16px;
+            padding: 21px 317px;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 767px;
+            width: 100%;
+            background-color: bisque;
+            z-index: -1;
+            opacity: .4;
+        }
+
+        #myPic {
+            height: 703px;
+            width: 100%;
+            /* border: 2px solid green; */
+        }
+
+        #content {
+
+            position: static;
+            display: grid;
+            height: auto;
+            width: 100%;
+            min-height: 626px;
+            grid-template-rows: repeat(2, min-content) 1fr;
+            grid-template-columns: 100%
+        }
+
+        #ab {
+            --contentPaddingLeft: 0px;
+            --contentPaddingRight: 0px;
+            --contentPaddingTop: 0px;
+            --contentPaddingBottom: 0px;
+            --height: 492px;
+            --width: 708px;
+            position: relative;
+            margin: 33px 0px px 10px calc((100% - 980px) * 0.5);
+            left: 500px;
+            grid-area: 1 / 1 / 4 / 2;
+            justify-self: start;
+            align-self: start;
+            margin-top: 54px;
+        }
+
+        .box {
+            /* display: grid;
+            /* grid-template-rows: repeat(2, min-content) 1fr; */
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid red; */
+            height: 491px;
+            width: 707px;
+            box-shadow: 1px 1px 40px crimson;
+            border-radius: 20px;
+        }
+
+        #box1 {
+            width: 422px;
+            position: relative;
+            margin: 188px 0px 8px calc((100% - 980px) * 0.5);
+            left: -132px;
+            grid-area: 1 / 1 / 2 / 2;
+            justify-self: start;
+            align-self: start
+        }
+
+        #box1 h1 {
+            line-height: 1.1em;
+            text-align: right;
+            font-size: 65px;
+            font-family: 'Charm', 'serif';
+            text-shadow: 1px 2px 7px white;
+        }
+
+        #box1 p {
+            line-height: 1.1em;
+            text-align: right;
+            font-size: 19px;
+            text-shadow: 1px 2px 5px white;
+        }
+
+        img {
+            height: 492px;
+            width: 708px;
+            margin-right: 276px;
+            border-radius: 15px;
+        }
+
+        #about {
+            display: grid;
+            grid-template-rows: 1fr 5fr;
+            /* border: 2px solid green; */
+            height: 650px;
+            margin-top: 90px;
+        }
+
+        #id1 {
+            width: 796px;
+            display: block;
+            padding: 2px 357px;
+            margin: 82px 0px;
+        }
+
+        #about h1 {
+            text-align: center;
+            font-size: 54px;
+            font-family: 'Charm', 'serif';
+        }
+
+        #about p {
+            text-align: center;
+            font-size: 19px;
+            line-height: 1.7em;
+            padding: 2px 140px;
+        }
+
+        #about1 {
+            /* display: grid;
+            grid-template-rows: 1fr 5fr; */
+            text-align: center;
+            /* border: 2px solid green; */
+            height: auto;
+        }
+
+        #about1 h1 {
+            text-align: center;
+            font-size: 54px;
+            margin-top: 89px;
+            font-family: 'Charm', 'serif';
+        }
+
+        .container {
+            border: 2px solid red;
+            width: 672px;
+            height: 650px;
+            margin: auto;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            box-shadow: 3px 5px 50px 10px #e75220;
+        }
+
+        .ed {
+            margin: 50px 6px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        @media(max-width:900px) {
+            #box1 {
+                justify-self: center;
+                align-self: start;
+                margin-top: 586px;
+            }
+
+            #ab {
+                justify-self: center;
+                align-self: start;
+                margin-top: 24px;
+                left: 0;
+            }
+            img{
+                margin-right: 71px;
+            }
+            #id1 {
+                padding: 2px 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p> <a href="Home.html" style="text-decoration: none;">Home</a></p>
+    </header>
+    <section id="myPic">
+        <div id="content">
+            <div id="ab">
+                <div class="box">
+                    <img src="/Pic/Amit Pic.jpg" alt="My Photo ">
+                </div>
+            </div>
+            <div id="box1">
+                <h1>Amit Ark</h1>
+                <p>Web Developer</p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <div id="id1">
+            <p>I am Amit Yadav. I m From Begusarai Bihar. Recently I Completed My Graduation From Lalit Narayan Mithila
+                University, Darbhanga With 77% In 2021.
+                Now I Pursue My Master Of Computer Application In Noida Institute Of Engineering And Technology Greater
+                Noida.
+            </p>
+        </div>
+    </section>
+    <section id="about1">
+        <div class="container">
+            <h1>My Education</h1>
+            <div class="ed">
+                <h3>2022-2024</h3>
+                <p>Mca Purcueing In Noida Institute Engineering And Technology Gr.Noid </p>
+            </div>
+            <div class="ed">
+                <h3>2018-2021</h3>
+                <p>My Graudation Complete In 2021 From Lalit Narayan Mithila University Darbhanga</p>
+            </div>
+            <div class="ed">
+                <h3>2016-2018</h3>
+                <p>My Intermediate Complete In 2018 From S.S.M.C.D. Dahiya Rasalpur Begusarai</p>
+            </div>
+            <div class="ed">
+                <h3>2015-2016</h3>
+                <p>My Tenth Complete In 2016 From Utkramit Madhyamik School Bathauli Begusarai </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p> Copyright &copy; www.MyWorld.com All Right Reserved </p>
+    </footer>
+</body>
+
+</html>
