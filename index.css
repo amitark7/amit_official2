@@ -7,22 +7,33 @@
     position: absolute;
     width: 100%;
 } */
+nav{
+    width: 100%;
+    background-color:#ddebeb;
+}
 header {
     display: flex;
+    width: 80%;
+    margin: auto;
     height: 76px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     /* border: 2px solid black; */
-    background-color:#ddebeb;
     position: sticky;
     top: 0;
 }
-
 header ul {
     display: flex;
     justify-content: right;
     margin-right: 23px;
 
+}
+header li a:hover{
+   border-bottom: 3px solid blue;
+}
+header li a{
+    color: #111;
+    font-size: 21px;
 }
 
 header li {
