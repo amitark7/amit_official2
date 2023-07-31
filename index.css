@@ -22,11 +22,19 @@ header {
     position: sticky;
     top: 0;
 }
+.hamburger{
+    display: none;
+}
+
 header ul {
     display: flex;
     justify-content: right;
     margin-right: 23px;
+}
 
+header li {
+    list-style: none;
+    padding: 3px 20px;
 }
 header li a:hover{
    border-bottom: 3px solid blue;
@@ -35,12 +43,6 @@ header li a{
     color: #111;
     font-size: 21px;
 }
-
-header li {
-    list-style: none;
-    padding: 3px 20px;
-}
-
 #head {
     width: 0px;
 }
@@ -53,6 +55,10 @@ header li {
     font-size: 21px;
 }
 
+.navbar {
+    margin-top: 0px;
+}
+
 header h2 {
     padding: 3px 92px;
     font-size: 23px;
@@ -63,9 +69,10 @@ header h2 {
     /* display: flex; */
     /* flex-direction: column; */
     /* border: 2px solid black; */
-    height: 619px;
+    /* height: 619px; */
     /* position: absolute; */
     /* left: 0; */
+    padding: 4px;
 }
 
 #mid {
@@ -91,7 +98,7 @@ header h2 {
     width: 100%;
     top: 10%;
     left: 0;
-    background: url('Pic/designecologist-Pmh0UoG1vlE-unsplash.jpg') no-repeat center center/cover;
+    background: url('/pic/designecologist-Pmh0UoG1vlE-unsplash.jpg') no-repeat center center/cover;
     z-index: -1;
     opacity: 0.6;
 }
@@ -101,7 +108,7 @@ header h2 {
     flex-direction: column;
     /* position: relative; */
     /* border: 2px solid black; */
-    height: 612px;
+    /* height: 612px; */
     width: 100%;
     /* left: 0; */
 }
@@ -117,7 +124,7 @@ header h2 {
     margin: 4px;
 }
 
- .h-primary{
+.h-primary{
     text-align: center; 
     font-size: 34px;
     margin: 12px;
@@ -148,9 +155,10 @@ header h2 {
     /* display: flex; */
     /* flex-direction: column; */
     /* border: 2px solid black; */
-    height: 619px;
+    /* height: 619px; */
     /* position: absolute; */
     /* left: 0; */
+    padding: 4px;
 }
 /* Memories Section  */
 .gallery {
@@ -184,7 +192,7 @@ header h2 {
     flex-direction: column;
     justify-content: center;
     /* border: 2px solid black; */
-    height: 210px;
+    /* height: 210px; */
     background: gainsboro;
     /* position: absolute; */
     /* left: 0; */
@@ -192,15 +200,13 @@ header h2 {
 #logo{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 130px;
 }
 #mid3 img{
     height: 54px;
     width: 54px;
-    padding: 6px 10px;
-    margin: 3px 72px;
 }
 
 /* Contact Form  */
@@ -208,7 +214,7 @@ header h2 {
     display: flex;
     flex-direction: column;
     /* position: relative; */
-    height: 497px;
+    /* height: 497px; */
     align-items: center;
     justify-content: center;
 }
@@ -228,11 +234,12 @@ header h2 {
     width: 100%;
     padding: 0.5rem;
     border-radius: 8px;
+    margin: 6px 0px;
     /* font-size: 1.8rem; */
 }
 
 #con form{
-    width: 490px;
+    width: 100%;
 }
 
 #con label{
@@ -244,10 +251,30 @@ header h2 {
     align-items: center;
     justify-content: center;
     padding-bottom: 14px;
+    width: 60%;
 }
 footer{
     text-align: center;
     background-color: black;
     color: white;
     padding: 8px 2px;
+}
+
+
+@media screen and (max-width:1200px) {
+    header ul{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    #mid h1{
+        font-size: 3em;
+    }
+    #mid p{
+        font-size: 14px;
+    }
+    .some{
+        flex-direction: column;
+    }
 }
