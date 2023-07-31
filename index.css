@@ -196,6 +196,7 @@ header h2 {
     background: gainsboro;
     /* position: absolute; */
     /* left: 0; */
+    padding: 34px 29px;
 }
 #logo{
     display: flex;
@@ -217,11 +218,12 @@ header h2 {
     /* height: 497px; */
     align-items: center;
     justify-content: center;
+    padding:18px 0px;
 }
 #contact::before{
     content: '';
     position: absolute;
-    height: 75%;
+    height: 36em;
     width: 100%;
     /* top: 0%;
     left: 0; */
