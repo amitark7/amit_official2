@@ -264,7 +264,7 @@ footer{
 
 @media screen and (max-width:1200px) {
     .h-primary{
-    font-size:23px;
+    font-size:21px;
     }
     header ul{
         position:fixed;
@@ -304,9 +304,13 @@ footer{
     .some{
         flex-direction: column;
     }
+    .gallery{
+    margin:0px;
+    }
     .gallery img{
         height: 100%;
         object-fit: cover;
+        margin:0px;
     }
       #mid3 img{
         width: 20px;
