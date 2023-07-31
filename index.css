@@ -202,7 +202,7 @@ header h2 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 130px;
+    padding:10px;
 }
 #mid3 img{
     height: 54px;
@@ -316,5 +316,6 @@ footer{
         width: 20px;
         height: 20px;
     }
-}
+    footer p{
+        font-size:10px;
 }
