@@ -9,7 +9,7 @@
 } */
 nav{
     width: 100%;
-    background-color:#ddebeb;
+    background-color:#131515;
 }
 header {
     display: flex;
@@ -29,7 +29,6 @@ header {
 header ul {
     display: flex;
     justify-content: right;
-    margin-right: 23px;
 }
 
 header li {
@@ -40,7 +39,7 @@ header li a:hover{
    border-bottom: 3px solid blue;
 }
 header li a{
-    color: #111;
+    color: #fff;
     font-size: 21px;
 }
 #head {
@@ -167,7 +166,7 @@ header h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 541px;
+    /* height: 541px; */
     width: 100%;
     /* border-radius: 15px; */
     margin: 4px;
@@ -263,10 +262,32 @@ footer{
 
 @media screen and (max-width:1200px) {
     header ul{
-        display: none;
+        position:fixed;
+        text-align: center;
+        flex-direction: column;
+        padding: 24px 18px;
+        width: 100%;
+        top: -100%;
+        left: 0%;
+        background: black;
+        opacity: 0.7;
+        transition: all 0.4s ease;
+    }
+    header ul.active{
+        top: 0%;
+    }
+    header li{
+        margin: 12px 10px;
+        display: block;
+    }
+    header li a{
+        color:#fff;
     }
     .hamburger{
         display: block;
+        color: #fff;
+        font-size: 21px;
+        z-index: 999;
     }
     #mid h1{
         font-size: 3em;
@@ -276,5 +297,9 @@ footer{
     }
     .some{
         flex-direction: column;
+    }
+    .gallery img{
+        height: 100%;
+        object-fit: cover;
     }
 }
