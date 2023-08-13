@@ -109,9 +109,10 @@ header h2 {
     height: 100vh;
     position: relative;
     margin: auto;
+    overflow: hidden;
 }
 .craousal{
-    overflow: hidden;
+    overflow-y: hidden;
 }
 .slide{
     position: absolute;
@@ -363,5 +364,16 @@ footer{
     #con label{
     font-size: 0.8rem;
 
+}
+
+#slider{
+    height: 250px;
+}
+.slide{
+    height:200px;
+    object-fit: fill;
+}
+#slider i{
+    font-size: 10px;
 }
 }
