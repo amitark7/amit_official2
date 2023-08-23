@@ -351,7 +351,7 @@ footer{
     }
     .gallery img{
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
         margin:0px;
     }
       #mid3 img{
